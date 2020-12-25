@@ -13,7 +13,7 @@ Run command to install Python packages in Linux:
 	pip3 install -r depends.txt
 
 Run command to install Python packages in Windows:
-	pip install -r depends.txt
+        pip install -r depends.txt
 
 Rules
 -----

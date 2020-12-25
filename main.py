@@ -103,7 +103,7 @@ def main():
                 number[i].append('S3')
     destination()
     print_out(0, False)
-    print('\n\n ', 'Destination: ', end = '')
+    print('\n\n ', 'Sequence: ', end = '')
     boof_line = 0
     boof_column = 0
     color_for_destination = 0
@@ -128,7 +128,7 @@ def main():
                         print_out((choice - 1), True)
                     elif i == len(destination_numbers) - 1:
                         print_out(boof_choice, False)
-                    print('\n\n ', 'Destination: ', end = '')
+                    print('\n\n ', 'Sequence: ', end = '')
                     for i in range(len(destination_numbers)):
                         if color_for_destination > i:
                             print(Fore.GREEN, end = '')
@@ -142,7 +142,7 @@ def main():
                 else:
                     os.system('cls' if os.name == 'nt' else 'clear')
                     print_out(boof_choice, False)
-                    print('\n\n ', 'Destination: ', end = '')
+                    print('\n\n ', 'Sequence: ', end = '')
                     for i in range(len(destination_numbers)):
                         if color_for_destination > i:
                             print(Fore.GREEN, end = '')
@@ -162,7 +162,7 @@ def main():
                         print_out((choice - 1), True)
                     elif i == len(destination_numbers) - 1:
                         print_out(boof_choice, False)
-                    print('\n\n ', 'Destination: ', end = '')
+                    print('\n\n ', 'Sequence: ', end = '')
                     for i in range(len(destination_numbers)):
                         if color_for_destination > i:
                             print(Fore.GREEN, end = '')
@@ -176,7 +176,7 @@ def main():
                 else:
                     os.system('cls' if os.name == 'nt' else 'clear')
                     print_out(boof_choice, False)
-                    print('\n\n ', 'Destination: ', end = '')
+                    print('\n\n ', 'Sequence: ', end = '')
                     for i in range(len(destination_numbers)):
                         if color_for_destination > i:
                             print(Fore.GREEN, end = '')
@@ -199,7 +199,7 @@ def main():
                     print_out((choice - 1), False)
                 elif i == len(destination_numbers) - 1:
                     print_out(boof_choice, True)
-                print('\n\n ', 'Destination: ', end = '')
+                print('\n\n ', 'Sequence: ', end = '')
                 for i in range(len(destination_numbers)):
                     if color_for_destination > i:
                         print(Fore.GREEN, end = '')
@@ -210,9 +210,9 @@ def main():
                     print(str(destination_numbers[i]) + '  ', end = '')
                 color_for_destination = color_for_destination + 1
             else:
-                s.system('cls' if os.name == 'nt' else 'clear')
+                os.system('cls' if os.name == 'nt' else 'clear')
                 print_out(boof_choice, True)
-                print('\n\n ', 'Destination: ', end = '')
+                print('\n\n ', 'Sequence: ', end = '')
                 for i in range(len(destination_numbers)):
                     if color_for_destination > i:
                         print(Fore.GREEN, end = '')

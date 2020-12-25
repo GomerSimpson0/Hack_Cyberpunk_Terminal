@@ -89,7 +89,7 @@ def print_out(num, line_or_column): # True - column, False - line
 def main():
     print("Hello! Lets hack terminal like in Cyberpunk 2077")
     input('\nPress enter when you will ready . . .')
-    os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
     for i in range(5):
         for j in range(5):
             cache = random.randint(1, 4)
@@ -123,7 +123,7 @@ def main():
             boof_column = choice
             if i == 0:
                 if check_num((boof_column - 1), boof_line, destination_numbers[i]) == True:
-                    os.system('clear')
+                    os.system('cls' if os.name == 'nt' else 'clear')
                     if i != len(destination_numbers) - 1:
                         print_out((choice - 1), True)
                     elif i == len(destination_numbers) - 1:
@@ -140,7 +140,7 @@ def main():
                     color_for_destination = color_for_destination + 1
                     boof_choice = choice - 1
                 else:
-                    os.system('clear')
+                    os.system('cls' if os.name == 'nt' else 'clear')
                     print_out(boof_choice, False)
                     print('\n\n ', 'Destination: ', end = '')
                     for i in range(len(destination_numbers)):
@@ -157,7 +157,7 @@ def main():
 
             else:
                 if check_num((boof_column - 1), (boof_line - 1), destination_numbers[i]) == True:
-                    os.system('clear')
+                    os.system('cls' if os.name == 'nt' else 'clear')
                     if i != len(destination_numbers) - 1:
                         print_out((choice - 1), True)
                     elif i == len(destination_numbers) - 1:
@@ -174,7 +174,7 @@ def main():
                     color_for_destination = color_for_destination + 1
                     boof_choice = choice - 1
                 else:
-                    os.system('clear')
+                    os.system('cls' if os.name == 'nt' else 'clear')
                     print_out(boof_choice, False)
                     print('\n\n ', 'Destination: ', end = '')
                     for i in range(len(destination_numbers)):
@@ -194,7 +194,7 @@ def main():
             choice = int(input('\n\n  ' + Fore.WHITE + 'Input number of line: '))
             boof_line = choice
             if check_num((boof_column - 1), (boof_line - 1), destination_numbers[i]) == True:
-                os.system('clear')
+                os.system('cls' if os.name == 'nt' else 'clear')
                 if i != len(destination_numbers) - 1:
                     print_out((choice - 1), False)
                 elif i == len(destination_numbers) - 1:
@@ -210,7 +210,7 @@ def main():
                     print(str(destination_numbers[i]) + '  ', end = '')
                 color_for_destination = color_for_destination + 1
             else:
-                os.system('clear')
+                s.system('cls' if os.name == 'nt' else 'clear')
                 print_out(boof_choice, True)
                 print('\n\n ', 'Destination: ', end = '')
                 for i in range(len(destination_numbers)):

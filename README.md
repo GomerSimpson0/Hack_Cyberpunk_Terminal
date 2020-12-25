@@ -3,7 +3,7 @@
 About
 -----
 
-Hello! If you have played in Cyberpunk 2077 you have seen the terminal hacking. In this program, you will also find sequences to hack and gain access.
+Hello! If you have played in Cyberpunk 2077 you have seen the terminal hacking. In this program, you will find sequences to hack and gain access.
 
 Installation
 ------------

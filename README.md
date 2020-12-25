@@ -14,7 +14,7 @@ Run command to install Python packages in Linux:
 
 Run command to install Python packages in Windows:
 
-        pip install -r depends.txt
+	pip install -r depends.txt
 
 Rules
 -----

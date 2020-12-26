@@ -1,4 +1,4 @@
-# Hack_Cyberpunk_Terminal
+# Hack Cyberpunk Terminal
 
 About
 -----
